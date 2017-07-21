@@ -1,0 +1,18 @@
+<!-- Main jumbotron for a primary user information -->
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <img class="img-thumbnail img-circle row" alt="Avatar" [src]="user.picture" />
+      本月绩效评分： <span>6</span>
+      开发效率评价： <span class="glyphicon glyphicon-star"></span>
+    </div>
+
+
+
+    <p>工作项总数： {{user.totleItem}} 项</p>
+    <p>总工作量： {{user.totleDays}}</p>
+    <p>已完成： {{user.doneItem}} 项</p>
+    <p>开发中： {{user.doingItem}}项</p>
+
+  </div>
+</div>

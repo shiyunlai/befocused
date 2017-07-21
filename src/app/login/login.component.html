@@ -1,0 +1,30 @@
+<div class="container">
+
+  <form class="form-signin"
+        [formGroup]="loginModel">
+
+    <h2 class="form-signin-heading center">Be focused</h2>
+    <div class="form-group">
+      <label for="inputUserId" class="sr-only">User ID</label>
+      <input type="text" id="inputUserId" class="form-control" placeholder="User ID" autofocus
+             formControlName="userId">
+    </div>
+    <div class="form-group">
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password"
+             formControlName="password">
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit"
+            (click)="doLogin()">Sign in</button>
+    <div class="alert alert-warning " role="alert"
+         [hidden]="loginModel.valid">
+      <strong>Warning!</strong> Please use the correct user and password !
+    </div>
+  </form>
+
+</div>
